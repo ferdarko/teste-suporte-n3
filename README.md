@@ -169,7 +169,8 @@ O sistema armazena registros de envio de propostas na tabela `envios` com os seg
 **Tarefa:**  
 Escreva uma query SQL que liste todas as propostas com `status = 'erro'` enviadas nos últimos 7 dias, ordenadas por `data_envio` decrescente. Explique como utilizaria esta consulta no seu dia a dia para investigar problemas de envio.
 
-
+1. Query SQL:
+   
 ```sql
 SELECT
     id,
@@ -188,10 +189,10 @@ ORDER BY
 
 A query SQL completa pode ser encontrada em [sql/error_proposals_query.sql.](https://github.com/ferdarko/teste-suporte-n3/blob/main/sql/error_proposals_query.sql "sql/error_proposals_query.sql.")
 
-Observações sobre a sintaxe de data:
+* **Observações sobre a sintaxe de data:**
 
-CURRENT_DATE - INTERVAL '7 days' é a sintaxe mais comum e compatível com PostgreSQL e MySQL.  
-Para outros bancos de dados, pode ser necessário ajustar a função de data.
+* CURRENT_DATE - INTERVAL '7 days' é a sintaxe mais comum e compatível com PostgreSQL e MySQL.  
+* Para outros bancos de dados, pode ser necessário ajustar a função de data.
 
 2. Como utilizaria esta consulta no dia a dia para investigar problemas de envio:
 
