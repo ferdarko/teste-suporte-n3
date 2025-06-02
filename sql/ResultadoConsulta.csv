@@ -1,0 +1,3 @@
+"id","proposta_id","status","data_envio","mensagem_erro"
+"1","101","erro","2025-05-29 17:14:42.688437","Timeout ao tentar enviar proposta"
+"2","102","erro","2025-05-27 17:14:42.688437","Token inválido"
